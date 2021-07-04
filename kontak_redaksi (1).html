@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script type="text/javascript">
+		function cekNama(form) {
+			if (form.nama.value == "") {
+				alert("Nama Harus Dimasukkan!");
+				return(false);
+		}		
+			if (form.Email.value == "") {
+				alert("Email Harus Dimasukkan!");
+				return(false);
+		}			
+			alert("Terima kasih, " + form.nama.value);
+			return(true);
+		}
+		
+	</script>   
+</head>
+<body>
+
+	<header>
+		<img src="amikom_logo.jpg" class="logo">
+		<p class="deskripsi">Terupdate & Aktual dimanapun Anda Berada</p>
+	</header>
+	
+	<div class="wrap">
+		<!-- bagian menu -->
+	<nav class="menu">
+			<ul>
+				<li>
+					<a href="home.html">Home</a>
+				</li>
+				<li>
+					<a href="news.html">News</a>
+				</li>
+				<li>
+					<a href="kontak_redaksi.html">Kontak Redaksi</a>
+				</li>
+				<li>
+					<a href="about_us.html">About Us</a>
+				</li>
+				<li>
+					<a href="login_member.html">Login Member</a>
+			</ul>
+		</nav>
+		<!-- akhir bagian menu -->
+ 
+		<!-- bagian sidebar website -->
+		<aside class="sidebar">
+			<div class="widget">
+				<h2>Berita Populer</h2>
+				<a href="jasa.html"><p align="justify">Server Jasa Programming<p></a><hr>
+				
+			</div>
+			<div class="widget">
+				<h2>Berita Terbaru</h2>
+				<a href="jasa.html"><p align="justify">asa Instalasi Kebutuhan server, mikrotik, networking dan Programming<p></a><hr>
+				
+			</div>
+		</aside>
+		<!-- akhir bagian sidebar website -->
+ 
+		<!-- bagian konten Blog -->
+	<div class="column_middle">  
+		<div>
+			<h2><center>Kontak</center></h2>
+			<p align="justify">Kontak kami untuk kritikan dan masukkan agar informasi yang ditampilkan tetap informatif dan mendidik <strong> di bawah ini!</strong></p>
+			<form action="#">
+				<label for="fnama">Nama</label>
+				<input type="text" id="fnama" name="nama" class="form_register" placeholder="Nama Anda....">
+
+				<label for="Email">Email</label>
+				<input type="text" id="Email" name="Email" class="form_register" placeholder="Email Anda...">
+
+				<label for="comment"> Kritik atau Saran</label>
+				<input type="text" id="comment" name="comment" class="form_register">
+				<input type="submit" name="Submit" class="Submit" onclick="cekNama(this.form)">
+			</form> 
+		</div>
+	</div>
+		<!-- akhir bagian konten Blog -->
+		
+	<div class="wrapp">
+		<nav class="footer">
+				<td colspan="5"><marquee behavior="alternate"> Final Project PPW Kelompok-3 </td>
+		</nav>
+		</div
+</body>
+</html>
